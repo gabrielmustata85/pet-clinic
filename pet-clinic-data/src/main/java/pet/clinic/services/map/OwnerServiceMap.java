@@ -1,9 +1,9 @@
-package services.map;
+package pet.clinic.services.map;
 
 
-import model.Owner;
+import pet.clinic.model.Owner;
 import org.springframework.stereotype.Service;
-import services.OwnerService;
+import pet.clinic.services.OwnerService;
 import java.util.Set;
 
 @Service

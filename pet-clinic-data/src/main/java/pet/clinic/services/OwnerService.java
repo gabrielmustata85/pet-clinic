@@ -1,8 +1,7 @@
-package services;
+package pet.clinic.services;
 
-import model.Owner;
+import pet.clinic.model.Owner;
 
-import java.util.Set;
 
 public interface OwnerService extends CrudService<Owner, Long>{
 

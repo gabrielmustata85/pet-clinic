@@ -1,11 +1,11 @@
 package pet.clinic.bootstrap;
 
-import model.Owner;
-import model.Vet;
+import pet.clinic.model.Owner;
+import pet.clinic.model.Vet;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import services.OwnerService;
-import services.VetService;
+import pet.clinic.services.OwnerService;
+import pet.clinic.services.VetService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -23,14 +23,19 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Owner owner1 = new Owner();
+        owner1.setId(1L);
         owner1.setFirstName("Michael");
         owner1.setLastName("Weston");
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
+        owner2.setId(2L);
         owner2.setFirstName("Fiona");
         owner2.setLastName("Glenanne");
+
+        ownerService.save(owner2);
+
 
         System.out.println("Loaded Owners....");
 
