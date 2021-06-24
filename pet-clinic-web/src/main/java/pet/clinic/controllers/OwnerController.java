@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import pet.clinic.services.OwnerService;
 
 @Controller
+@RequestMapping("/owners")
 public class OwnerController {
 
     private final OwnerService ownerService;
@@ -14,12 +15,16 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
-    @RequestMapping("/owners")
+    @RequestMapping({"", "/",  "/owners"})
     public String listOwners(Model model){
 
         model.addAttribute("owners", ownerService.findAll());
 
         return "/owners/listOwner";
 
+    }
+    @RequestMapping("/find")
+    public String findOwners(){
+        return "notImplementedPage";
     }
 }
