@@ -4,7 +4,6 @@ package pet.clinic.services.map;
 import pet.clinic.model.Owner;
 import org.springframework.stereotype.Service;
 import pet.clinic.model.Pet;
-import pet.clinic.model.PetType;
 import pet.clinic.services.OwnerService;
 import pet.clinic.services.PetService;
 import pet.clinic.services.PetTypeService;
