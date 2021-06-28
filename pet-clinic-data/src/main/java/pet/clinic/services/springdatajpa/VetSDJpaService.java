@@ -1,7 +1,6 @@
 package pet.clinic.services.springdatajpa;
 
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 import pet.clinic.model.Vet;
 import pet.clinic.repositories.VetRepository;
