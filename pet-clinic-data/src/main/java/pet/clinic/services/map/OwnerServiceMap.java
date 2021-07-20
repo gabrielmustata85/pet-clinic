@@ -9,6 +9,7 @@ import pet.clinic.services.OwnerService;
 import pet.clinic.services.PetService;
 import pet.clinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -75,4 +76,9 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         public Owner findByLastName (String lastName){
             return null;
         }
+
+    @Override
+    public List<Owner> findAllByLastName(String lastName) {
+        return null;
     }
+}
