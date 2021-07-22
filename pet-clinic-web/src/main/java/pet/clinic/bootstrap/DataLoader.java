@@ -31,11 +31,11 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         PetType dog = new PetType();
-        dog.setPetName("Dog");
+        dog.setName("Dog");
         PetType saveDogType = petTypeService.save(dog);
 
         PetType cat = new PetType();
-        cat.setPetName("Cat");
+        cat.setName("Cat");
         PetType saveCatType = petTypeService.save(cat);
 
         Speciality radiology = new Speciality();
